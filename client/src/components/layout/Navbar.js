@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import logo from'./MindSpaceLogo.png';
 
 class Navbar extends Component {
   render() {
@@ -7,6 +8,7 @@ class Navbar extends Component {
       <div className="navbar-fixed">
         <nav className="z-depth-0">
           <div className="nav-wrapper white">
+            <div class = "left">
             <Link
               to="/"
               style={{
@@ -14,9 +16,10 @@ class Navbar extends Component {
               }}
               className="col s5 brand-logo center black-text"
             >
-              <i className="material-icons">code</i>
-              MERN
+              MindSpace
             </Link>
+            </div > <div class = "right"> <img src = {logo} width = "50"/>
+            </div>
           </div>
         </nav>
       </div>
